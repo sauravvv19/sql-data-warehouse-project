@@ -87,7 +87,7 @@ SELECT
     sd.sls_sales    AS sales_amount,
     sd.sls_quantity AS quantity,
     sd.sls_price    AS price
-FROM silver.crm_sales_details sd
+FROM silver.crm_sales_detail sd
 LEFT JOIN gold.dim_products pr
     ON sd.sls_prd_key = pr.product_number
 LEFT JOIN gold.dim_customers cu
