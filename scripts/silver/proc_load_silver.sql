@@ -113,10 +113,10 @@ BEGIN
 
         -- Loading crm_sales_details
         SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: silver.crm_sales_details';
-		TRUNCATE TABLE silver.crm_sales_details;
-		PRINT '>> Inserting Data Into: silver.crm_sales_details';
-		INSERT INTO silver.crm_sales_details (
+		PRINT '>> Truncating Table: silver.crm_sales_detail';
+		TRUNCATE TABLE silver.crm_sales_detail;
+		PRINT '>> Inserting Data Into: silver.crm_sales_detail';
+		INSERT INTO silver.crm_sales_detail (
 			sls_ord_num,
 			sls_prd_key,
 			sls_cust_id,
